@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: digital-7;
+    src: url(digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --light-color:#c4e538;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #2c3a47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    gap: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.frame {
+    width: 500px;
+    height: 300px;
+    background-color: #333;
+    border: 50px solid #58b194;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 180px;
+}
+
+.clock {
+    font-family: digital-7;
+    color: white;
+    text-shadow: 0 0 20px var(--light-color);
+    position: relative;
+}
+
+/* .clock::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 48px;
+    outline: 0 0 #111;
+    top: 0;
+    filter: blur(40px);
+} */
+.clock::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: var(--light-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    filter: blur(40px);
+}
