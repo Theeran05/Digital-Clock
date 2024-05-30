@@ -74,3 +74,9 @@ h2 {
     opacity: 0.1;
     filter: blur(40px);
 }
+
+/******************************************************/
+
+.clock div{
+    font-family: digital-7;
+}
