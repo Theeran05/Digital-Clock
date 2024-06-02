@@ -6,7 +6,7 @@ function runclock() {
     var sec = current.getSeconds();
     var txt = "AM"
     if (hrs > 12) {
-        hrs =- 12;
+        hrs -= 12;
         txt = "PM";
     } else if (hrs == 0) {
         hrs = 12;
